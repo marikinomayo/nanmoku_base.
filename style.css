@@ -1,0 +1,621 @@
+
+@charset "UTF-8";
+
+/* 共通部分
+-------------------------------*/
+
+html {
+    font-size: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #000;
+
+}
+a {
+    text-decoration: none;
+
+}
+img {
+    max-width: 100%;
+}
+
+
+
+ /* HEADER
+------------------------------- */
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #fff;
+}
+.main-nav a:hover {
+    color: #fff;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* HOME
+------------------------------- */
+.home-content {
+    text-align: center;
+    margin-top: 35%;
+    color: #fff;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/* 見出し */
+.page-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background-color: aliceblue;
+    color: coral;
+    border-radius: 5px;
+    padding: 18px 32px;
+    height: 20%;
+}
+.button:hover {
+    background-color: chocolate;
+}
+/* 大きな背景画像 */
+.big-bg{
+    background-size: contain;
+    background-position: center top;
+}
+#home {
+    background-image: url(../images/オレンジ_edited_edited.jpg);
+    background-color: coral;
+    background-size: contain;
+    background-position: center;
+    min-height: 100vh;
+}
+#home .page-title{
+    text-transform: none;
+}
+
+/* ごあいさつ
+--------------------------- */
+#goaisatsu {
+    background-image: url(../images/夜ガビオン_edited_edited.jpg);
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 40px;
+    background-position: center;
+}
+#goaisatsu .page-title {
+    text-align: center;
+    margin-top: 100px;
+}
+/* フッター
+--------------------------- */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+/* 記事部分 */
+article {
+    width: 74%;
+}
+/* サイドバー */
+aside {
+    width: 22%;
+    margin-top: 0px;
+}
+.goaisatsu-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-date {
+    background: coral;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255, 255, 255, 5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.post-title {
+    font-family: "Yu Gothic", "Gothic", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat {
+    margin-left: 120px;
+}
+article img {
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+.sub-title {
+    font-size: 1.375;
+    padding: 0 8px 8px;
+    border-bottom: 2px coral solid;
+    font-weight: normal;
+    margin-top: 10px;
+}
+aside p {
+    padding: 12px 10px;
+    margin-top: 0px;
+}
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+    margin-top: 10px;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: coral;
+}
+
+
+ 
+/* ご利用案内
+-------------------------*/
+#goriyouannai .page-header {
+    margin-top: 0%;
+}
+#goriyouannai  {
+    background-image: url(../images/夜ワイルドサイト_edited_edited.jpg);
+    text-align: center;
+    background-size: contain;
+    height: 450px;
+    margin: 0%;
+    margin-bottom: 40px;
+    background-size: cover;
+    padding-top: 10px;
+    line-height: 10px;
+}
+#goriyouannai .page-title {
+    text-align: center;
+    padding-top: 180px;
+    color: #fff;
+}
+/* フッター
+--------------------------- */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+/* 記事部分 */
+article {
+    width: 74%;
+}
+/* サイドバー */
+aside {
+    width: 22%;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.goriyouannai-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-title {
+    font-family: "Yu Gothic", "Gothic", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat {
+    margin-left: 120px;
+}
+article img {
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+.sub-title {
+    font-size: 1.375;
+    padding: 0 8px 8px;
+    border-bottom: 2px coral solid;
+    font-weight: normal;
+}
+aside p {
+    padding: 12px 10px;
+}
+.sub-menu {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    list-style: none;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+color: coral;
+}
+article {
+    width: 60%;
+    order: 2;
+}
+aside {
+    width: 22%;
+    order: 3;
+    margin-left: 30px;
+    margin-top: 0%;
+}
+.ad {
+    order: 1;
+    margin-top: 45px;
+    margin-right: 40px;
+}
+/*CONTACT
+---------------------*/
+#contact{
+    background-image: url(../images/昼ワイルド～ガーデン_edited_edited.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    text-align: left;
+    padding-top: 10px;
+    height: 600px;
+}
+/*フォーム */
+form div {
+    margin-bottom: 14px;
+    color: #fff;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="day"],
+
+textarea {
+    background: rgba(255, 255, 255, 5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem
+}
+input[type="text"],
+input[type="email"],
+input[type="select"],
+
+select {
+      background-color: #fff;
+      color: #432;
+}
+textarea {
+    width: 100%;
+    
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/*　キャンプ場情報・地図 */
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+/* iframe */
+iframe {
+    width: 100%;
+}
+/* SNS */
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
+}
+
+/* キャンプ場の紹介
+--------------------------------*/
+
+#キャンプ場の紹介 {
+    background-image: linear-gradient(#3b82c4, #eaf6fd);
+    min-height: 100vh;
+    background-size: contain;
+    font-size: 20px; background-size: cover;
+    height: 450px;   
+    background-position: center;
+    
+}
+#キャンプ場の紹介 .page-title {
+   text-align: center;
+    margin-top: 80px;
+    width: 150%;
+    margin-bottom: 60px;
+}
+/* 記事部分 */
+article {
+    width: 74%;  
+}
+/* サイドバー */
+aside {
+    width: 22%;
+    margin-top: 250px;
+}
+.キャンプ場の紹介-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* フッター */
+footer {
+    margin-bottom: 0%;
+}
+/* プレプレOPEN
+--------------------------------*/
+#プレプレOPEN {
+    background-image: linear-gradient(#3b82c4, #eaf6fd);
+    min-height: 100vh;
+    font-size: 20px; 
+    background-size: contain;
+    height: 450px;   
+    background-position: center;
+}
+#プレプレOPEN .page-title {
+    text-align: center;
+    margin-top: 80px;
+    width: 150%;
+    margin-bottom: 60px;
+}
+/* 記事部分 */
+article {
+    width: 74%;  
+}
+/* サイドバー */
+aside {
+    width: 22%;
+}
+.プレプレOPEN-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* フッター */
+footer {
+    margin-bottom: 0%;
+}
+/* 設備について
+--------------------------------*/
+
+#設備について {
+    background-image: linear-gradient(#3b82c4, #eaf6fd);
+    min-height: 100vh;
+    background-size: contain;
+    font-size: 20px; background-size: cover;
+    height: 500px;   
+    background-position: center;
+}
+#設備について .page-title {
+   text-align: center;
+    margin-top: 80px;
+    width: 150%;
+    margin-bottom: 60px;
+}
+/* 記事部分 */
+article {
+    width: 74%;  
+}
+/* サイドバー */
+aside {
+    width: 22%;
+}
+.設備について-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* フッター */
+footer {
+    margin-bottom: 0%;
+}
+/* 注意事項
+--------------------------------*/
+
+#注意事項 {
+    background-image: linear-gradient(#3b82c4, #eaf6fd);
+    min-height: 100vh;
+    background-size: contain;
+    font-size: 20px; background-size: cover;
+    height: 500px;   
+    background-position: center;
+}
+#注意事項 .page-title {
+    text-align: center;
+    margin-top: 80px;
+    width: 150%;
+    margin-bottom: 60px;
+}
+/* 記事部分 */
+article {
+    width: 74%;  
+}
+/* サイドバー */
+aside {
+    width: 22%;
+}
+.注意事項-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* フッター */
+footer {
+    margin-bottom: 0%;
+}
+
+/* モバイル版
+-------------------------------*/
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+ /* HEADER*/
+ .main-nav {
+     font-size: 1rem;
+     margin-top: 10px;
+ }
+ .main-nav li {
+     margin: 0 20px;
+ }
+
+ /* HOME */
+ .home-content {
+     margin-top: 20%;
+ }
+ .page-header {
+     flex-direction: column;
+     align-items: center;
+ }
+ /* goaisatsu */
+ .goaisatsu-contents {
+    flex-direction: column;
+ }
+ articl,
+ aside {
+    width: 100%;
+ }
+ #goaisatsu .page-title {
+    margin-top: 30px;
+ }
+ aside {
+    margin-top: 60px;
+ }
+ .post-info {
+    margin-bottom: 30px;
+ }
+ .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+ }
+ .post-date span {
+    font-size: 0.875rem;
+    padding-top: 2px;
+ }
+ .post-title {
+    font-size: 1.375rem;
+ }
+ .post-cat {
+    font-size: 0.875rem;
+    margin-top: 10px;
+ }
+ .post-title,
+ .post-cat {
+    margin-left: 80px;
+ }
+ /* contact */
+ #contact .page-title {
+    margin-top: 40px;
+ }
+
+ /* フォーム */
+ input[type="text"],
+ input[type="email"],
+ textarea {
+    max-width: 100%;
+ }
+ /* 店舗情報・地図 / SNS */
+ #location .wrapper,
+ #sns .wrapper {
+    flex-direction: column;
+ }
+ .location-info,
+ .location-map,
+ .sns-box {
+    width: 100%;
+ }
+ .sns-box {
+    margin-bottom: 30px;
+ }
+}
